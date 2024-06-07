@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-'''Task 9: Let's duck type an iterable object
+'''Task 7: Complex types - string and int/float to tuple
 '''
-from typing import Iterable, List, Sequence, Tuple
+from typing import Union, Tuple
 
-def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
-    '''Computes the length of a list of sequences.
+
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
+    '''Converts a key and its value to a tuple of the key and
+    the square of its value.
     '''
-    return [(i, len(i)) for i in lst]
+    return (k, float(v**2))

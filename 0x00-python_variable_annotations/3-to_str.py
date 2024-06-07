@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-'''Task 3: Basic annotations - to string
+'''Task 0: Basic annotations - add
 '''
 
-def to_str(n: float) -> str:
-    '''Converts a floating-point number to a string.
+
+def add(a: float, b: float) -> float:
+    '''Adds two floating-point numbers.
     '''
-    return str(n)
+    return a + b
